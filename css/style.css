@@ -1,0 +1,172 @@
+.container {
+    width: 80%;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.box .header {
+    min-width: 110px;
+    width: 8%;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    width: 92%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.mould {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.5s top;
+}   
+#home-page {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.header .mould-header .nav {
+    height: max-content;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header ul li {
+    margin: 28px 0px;
+    padding: 7px;
+    position: relative;
+}
+.header ul li a {
+    width: 60px;
+    height: 55px;
+    margin: 27px auto;
+    border-radius: 50%;
+    background: #444;
+    padding: 23px 33px;
+    position: relative;
+}
+
+.header ul li a i {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mould-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#home:hover i::before ,
+#about:hover i::before,
+#resume:hover i::before,
+#blog:hover i::before,
+#contact:hover i::before {
+    content: "Home";
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-64%);
+    transition: 0.1s content;
+}
+#about:hover i::before {
+    content: "About";
+}
+#resume:hover i::before {
+    content: "Resume";
+    font-size: 19px;
+}
+#blog:hover i::before {
+    content: "Blog";
+}
+#contact:hover i::before {
+    content: "Contact";
+    font-size: 20px;
+}
+
+
+/* home */
+
+#home-page .home-title {
+    width: 470px;
+    height: max-content;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home-title p {
+    font-size: 25px;
+    color: #fff;
+    font-family: cursive;
+}
+.home-title h2 {
+    font-size: 30px;
+    color: #fff;
+}
+.home-title h3 {
+    font-size: 38px;
+    color: #fff;
+}
+.home-title h3 span {
+    background-color: #333;
+    color: #fff;
+    padding: 0 5px;
+}
+
+
+/* about */
+#about-page {
+    width: 100%;
+    height: 100vh;
+    padding: 45px;
+}
+#about-page h2 {
+    font-size: 35px;
+    /* margin-bottom: 10px; */
+}
+#about-page hr {
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+.mould {
+    top: -100vh;
+} 
+
+
+
+/* @media only screen and (max-width: ) {
+    
+} */
